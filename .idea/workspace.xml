@@ -1,21 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="taller3:war exploded" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6b9e535-7a15-4360-8c44-80632f48a969" name="Changes" comment="subo correcion de nombres">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+    <list default="true" id="e6b9e535-7a15-4360-8c44-80632f48a969" name="Changes" comment="subo coorreciones jsp">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/evidencias/evidencia creacion artistas.bmp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/evidencias/evidencia creacion asistente.bmp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evidencias/evidencia de pagina principal.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/evidencias/evidencia de pagina principal.bmp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/RegistroArtistaServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/RegistroArtistaServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/RegistroAsistenteServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/RegistroAsistenteServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/RegistroEventoServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/RegistroEventoServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Artista.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Artista.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Asistente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Asistente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/EventoMusical.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/EventoMusical.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/data/dao/ArtistaDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/data/dao/ArtistaDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/data/dao/AsistenteDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/data/dao/AsistenteDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/data/dao/EventoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/data/dao/EventoDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/data/DBGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/data/DBGenerator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,8 +25,23 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="MIXED" />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
@@ -42,32 +59,105 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "esteban",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "C:/Users/esteb/IdeaProjects/taller3",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mariadb"
+    ]
   }
 }]]></component>
   <component name="RunManager">
     <configuration name="Tomcat 10.1.16" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.1.16" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/taller3" />
       <deployment>
         <artifact name="taller3:war exploded">
           <settings>
-            <option name="CONTEXT_PATH" value="/taller3_war_exploded" />
+            <option name="CONTEXT_PATH" value="/taller3" />
           </settings>
         </artifact>
       </deployment>
-      <server-settings />
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="2b0477a7-33b1-4627-9143-e06e8bcee157" />
+      </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
       <predefined_log_file id="Tomcat Manager" />
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="53991" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
@@ -88,6 +178,7 @@
       <workItem from="1700741605543" duration="19000" />
       <workItem from="1700741655141" duration="19000" />
       <workItem from="1700741708821" duration="12000" />
+      <workItem from="1700741823207" duration="5379000" />
     </task>
     <task id="LOCAL-00001" summary="subo rama master">
       <option name="closed" value="true" />
@@ -129,7 +220,95 @@
       <option name="project" value="LOCAL" />
       <updated>1700741423623</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="subo rama master">
+      <option name="closed" value="true" />
+      <created>1700741878551</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1700741878551</updated>
+    </task>
+    <task id="LOCAL-00007" summary="subo rama esteban">
+      <option name="closed" value="true" />
+      <created>1700741942132</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1700741942132</updated>
+    </task>
+    <task id="LOCAL-00008" summary="subo codigo corregido de nombres">
+      <option name="closed" value="true" />
+      <created>1700742056374</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1700742056374</updated>
+    </task>
+    <task id="LOCAL-00009" summary="subo codigo corregido parte de l modelo">
+      <option name="closed" value="true" />
+      <created>1700742512269</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1700742512269</updated>
+    </task>
+    <task id="LOCAL-00010" summary="subo codigo registro de eventos">
+      <option name="closed" value="true" />
+      <created>1700743983548</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1700743983548</updated>
+    </task>
+    <task id="LOCAL-00011" summary="subo codigo resgristro artista y regristro asistente">
+      <option name="closed" value="true" />
+      <created>1700744496164</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1700744496164</updated>
+    </task>
+    <task id="LOCAL-00012" summary="subo codigo cooregido jsp">
+      <option name="closed" value="true" />
+      <created>1700744710979</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1700744710979</updated>
+    </task>
+    <task id="LOCAL-00013" summary="subo codigo README.md">
+      <option name="closed" value="true" />
+      <created>1700745888662</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1700745888662</updated>
+    </task>
+    <task id="LOCAL-00014" summary="subo mejora de README.md">
+      <option name="closed" value="true" />
+      <created>1700746195946</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1700746195946</updated>
+    </task>
+    <task id="LOCAL-00015" summary="subo evidencias">
+      <option name="closed" value="true" />
+      <created>1700746584923</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1700746584923</updated>
+    </task>
+    <task id="LOCAL-00016" summary="subo coorreciones jsp">
+      <option name="closed" value="true" />
+      <created>1700746782755</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1700746782755</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,10 +327,19 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="subo rama master" />
-    <MESSAGE value="subo rama esteban" />
     <MESSAGE value="subo creacion de clases y jsp en formato mvc" />
     <MESSAGE value="subo correcion de nombres" />
-    <option name="LAST_COMMIT_MESSAGE" value="subo correcion de nombres" />
+    <MESSAGE value="subo rama master" />
+    <MESSAGE value="subo rama esteban" />
+    <MESSAGE value="subo codigo corregido de nombres" />
+    <MESSAGE value="subo codigo corregido parte de l modelo" />
+    <MESSAGE value="subo codigo registro de eventos" />
+    <MESSAGE value="subo codigo resgristro artista y regristro asistente" />
+    <MESSAGE value="subo codigo cooregido jsp" />
+    <MESSAGE value="subo codigo README.md" />
+    <MESSAGE value="subo mejora de README.md" />
+    <MESSAGE value="subo evidencias" />
+    <MESSAGE value="subo coorreciones jsp" />
+    <option name="LAST_COMMIT_MESSAGE" value="subo coorreciones jsp" />
   </component>
 </project>

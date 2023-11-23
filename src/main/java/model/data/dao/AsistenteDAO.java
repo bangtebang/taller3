@@ -1,7 +1,6 @@
 package model.data.dao;
 
 import model.Asistente;
-import model.Usuario;
 import org.jooq.*;
 import org.jooq.impl.DSL;
 
@@ -12,7 +11,7 @@ import static org.jooq.impl.DSL.*;
 
 public class AsistenteDAO {
     public static void agregarAsistente(DSLContext query, Asistente asistente){
-        Table tablaUsuario= table(name("Usuario"));
+        Table tablaUsuario= table(name("Asistente"));
         Field[] columnas = tablaUsuario.fields("rut","nombre","edad");
         query.insertInto(tablaUsuario, columnas[0], columnas[1],columnas[2])
                 .values(asistente.getRut(),asistente.getNombre(),asistente.getEdad())
@@ -36,12 +35,12 @@ public class AsistenteDAO {
         query.delete(DSL.table("Usuario")).where(DSL.field("rut").eq(rut)).execute();
     }
     private static List obtenerListaUsarios(Result resultados){
-        List<Usuario> usuarios= new ArrayList<>();
+        List<Asistente> usuarios= new ArrayList<>();
         for(int fila=0; fila<resultados.size();fila++){
             String rut = (String) resultados.getValue(fila,"rut");
             String nombre = (String) resultados.getValue(fila,"nombre");
             int edad = (int) resultados.getValue(fila,"edad");;
-            usuarios.add(new Usuario(nombre,edad,rut));
+            usuarios.add(new Asistente(nombre,edad,rut,null));
         }
         return usuarios;
     }

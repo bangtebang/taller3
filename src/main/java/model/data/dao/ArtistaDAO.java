@@ -1,7 +1,6 @@
 package model.data.dao;
 
 import model.Artista;
-import model.Usuario;
 import org.jooq.*;
 import org.jooq.impl.DSL;
 

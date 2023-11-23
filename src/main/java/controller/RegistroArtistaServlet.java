@@ -6,13 +6,11 @@ import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
-import model.Usuario;
+import model.Artista;
 import model.data.DBGenerator;
-import model.data.dao.UsuarioDAO;
 import org.jooq.DSLContext;
-
+import model.data.dao.ArtistaDAO;
 import static model.data.DBGenerator.iniciarBD;
-import static model.data.dao.UsuarioDAO.agregarUsuario;
 
 @WebServlet(name = "registroArtistaServlet", value = "/registroArtista")
 public class RegistroArtistaServlet extends HttpServlet {
@@ -36,10 +34,10 @@ public class RegistroArtistaServlet extends HttpServlet {
             String nombre = req.getParameter("nombre");
             int edad = Integer.parseInt(req.getParameter("edad"));
             String rut = req.getParameter("rut");
-            Usuario usuario = new Usuario(nombre, edad, rut);
+            Artista artista = new Artista(nombre, edad, rut, null);
             try {
-                if (agregarUsuario(usuario)) {
-                    req.setAttribute("usuario", usuario);
+                if (agregarArtista(artista)) {
+                    req.setAttribute("artista", artista);
                     respuesta = req.getRequestDispatcher("registroValido.jsp");
                 }
             } catch (ClassNotFoundException e) {
@@ -49,13 +47,13 @@ public class RegistroArtistaServlet extends HttpServlet {
         respuesta.forward(req, resp);
     }
 
-    private boolean agregarUsuario(Usuario usuario) throws ClassNotFoundException {
+    private boolean agregarArtista(Artista usuario) throws ClassNotFoundException {
         DSLContext query = DBGenerator.conectarBD("UsuariosBD");
-        List<Usuario> usuarios = UsuarioDAO.obtenerUsuario(query, "rut", usuario.getRut());
+        List<Artista> usuarios = ArtistaDAO.obtenerArtista(query, "rut", usuario.getRut());
         if (usuarios.size() != 0) {
             return false;
         } else {
-            UsuarioDAO.agregarUsuario(query, usuario);
+            ArtistaDAO.agregarArtista(query, usuario);
             return true;
         }
     }

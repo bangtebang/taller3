@@ -11,7 +11,7 @@ import static org.jooq.impl.DSL.*;
 
 public class ArtistaDAO {
     public static void agregarArtista(DSLContext query, Artista artista){
-        Table tablaUsuario= table(name("Usuario"));
+        Table tablaUsuario= table(name("Artista"));
         Field[] columnas = tablaUsuario.fields("rut","nombre","edad");
         query.insertInto(tablaUsuario, columnas[0], columnas[1],columnas[2])
                 .values(artista.getRut(),artista.getNombre(),artista.getEdad())

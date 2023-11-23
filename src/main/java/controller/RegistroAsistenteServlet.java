@@ -26,7 +26,7 @@ public class RegistroAsistenteServlet extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        RequestDispatcher respuesta = req.getRequestDispatcher("/registroUsuario.jsp");
+        RequestDispatcher respuesta = req.getRequestDispatcher("/registroAsistente.jsp");
         respuesta.forward(req, resp);
     }
 

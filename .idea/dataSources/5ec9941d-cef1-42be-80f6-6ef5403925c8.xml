@@ -1141,8 +1141,8 @@ test\\_%|schema||&apos;&apos;||UPDATE|G</Grants>
       <Charset>utf8mb4</Charset>
     </collation>
     <schema id="324" parent="1" name="eventosbd">
-      <IntrospectionTimestamp>2023-11-23.07:35:06</IntrospectionTimestamp>
-      <LocalIntrospectionTimestamp>2023-11-23.13:35:06</LocalIntrospectionTimestamp>
+      <IntrospectionTimestamp>2023-11-23.07:51:50</IntrospectionTimestamp>
+      <LocalIntrospectionTimestamp>2023-11-23.13:51:50</LocalIntrospectionTimestamp>
       <CollationName>utf8mb4_general_ci</CollationName>
     </schema>
     <schema id="325" parent="1" name="fifa">
@@ -1184,21 +1184,102 @@ test\\_%|schema||&apos;&apos;||UPDATE|G</Grants>
     <user id="337" parent="1" name="root">
       <Host>localhost</Host>
     </user>
-    <table id="338" parent="324" name="eventomusical">
+    <table id="338" parent="324" name="artista">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_general_ci</CollationName>
     </table>
-    <column id="339" parent="338" name="nombre">
+    <table id="339" parent="324" name="asistente">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_general_ci</CollationName>
+    </table>
+    <table id="340" parent="324" name="eventomusical">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_general_ci</CollationName>
+    </table>
+    <table id="341" parent="324" name="usuario">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_general_ci</CollationName>
+    </table>
+    <column id="342" parent="338" name="rut">
       <DasType>varchar(50)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <index id="340" parent="338" name="PRIMARY">
+    <column id="343" parent="338" name="nombre">
+      <DasType>varchar(100)|0s</DasType>
+      <Position>2</Position>
+    </column>
+    <column id="344" parent="338" name="edad">
+      <DasType>int(11)|0s</DasType>
+      <Position>3</Position>
+    </column>
+    <index id="345" parent="338" name="PRIMARY">
+      <ColNames>rut</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="346" parent="338" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="347" parent="339" name="rut">
+      <DasType>varchar(50)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="348" parent="339" name="nombre">
+      <DasType>varchar(100)|0s</DasType>
+      <Position>2</Position>
+    </column>
+    <column id="349" parent="339" name="edad">
+      <DasType>int(11)|0s</DasType>
+      <Position>3</Position>
+    </column>
+    <index id="350" parent="339" name="PRIMARY">
+      <ColNames>rut</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="351" parent="339" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="352" parent="340" name="nombre">
+      <DasType>varchar(50)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <index id="353" parent="340" name="PRIMARY">
       <ColNames>nombre</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="341" parent="338" name="PRIMARY">
+    <key id="354" parent="340" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="355" parent="341" name="rut">
+      <DasType>varchar(50)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="356" parent="341" name="nombre">
+      <DasType>varchar(100)|0s</DasType>
+      <Position>2</Position>
+    </column>
+    <column id="357" parent="341" name="edad">
+      <DasType>int(11)|0s</DasType>
+      <Position>3</Position>
+    </column>
+    <index id="358" parent="341" name="PRIMARY">
+      <ColNames>rut</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="359" parent="341" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>

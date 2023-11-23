@@ -23,7 +23,7 @@ public class RegistroArtistaServlet extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        RequestDispatcher respuesta = req.getRequestDispatcher("/registroUsuario.jsp");
+        RequestDispatcher respuesta = req.getRequestDispatcher("/registroArtista.jsp");
         respuesta.forward(req, resp);
     }
 
@@ -48,7 +48,7 @@ public class RegistroArtistaServlet extends HttpServlet {
     }
 
     private boolean agregarArtista(Artista usuario) throws ClassNotFoundException {
-        DSLContext query = DBGenerator.conectarBD("UsuariosBD");
+        DSLContext query = DBGenerator.conectarBD("EventosBD");
         List<Artista> usuarios = ArtistaDAO.obtenerArtista(query, "rut", usuario.getRut());
         if (usuarios.size() != 0) {
             return false;

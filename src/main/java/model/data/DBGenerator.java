@@ -16,6 +16,8 @@ public class DBGenerator {
         crearBaseDato(create,nombreBD);
         create = actualizarConexion(connection,nombreBD);
         crearTablaEventoMusical(create);
+        crearTablaArtista(create);
+        crearTablaAsistente(create);
         DBConnector.closeConnection();
     }
     public static DSLContext conectarBD(String nombre) throws ClassNotFoundException {
@@ -37,6 +39,18 @@ public class DBGenerator {
     private static void crearTablaEventoMusical(DSLContext create){
         create.createTableIfNotExists("EventoMusical").column("nombre",VARCHAR(50))
                 .constraint(primaryKey("nombre")).execute();
+    }
+    private static void crearTablaArtista(DSLContext create){
+        create.createTableIfNotExists("Artista").column("rut",VARCHAR(50))
+                .column("nombre",VARCHAR(100))
+                .column("edad",INTEGER)
+                .constraint(primaryKey("rut")).execute();
+    }
+    private static void crearTablaAsistente(DSLContext create){
+        create.createTableIfNotExists("Asistente").column("rut",VARCHAR(50))
+                .column("nombre",VARCHAR(100))
+                .column("edad",INTEGER)
+                .constraint(primaryKey("rut")).execute();
     }
     private static void agregarColumnaTabla(DSLContext create, String nombreTabla, String columna, DataType tipoColumna){
         create.alterTableIfExists(nombreTabla).addColumn(columna,tipoColumna);

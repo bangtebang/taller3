@@ -1,6 +1,6 @@
 package model;
 
-public class Usuario {
+public class Asistente {
     private String nombre;
     private int edad;
     private String rut;

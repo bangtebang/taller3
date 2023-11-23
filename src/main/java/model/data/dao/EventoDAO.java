@@ -9,7 +9,7 @@ import java.util.List;
 
 import static org.jooq.impl.DSL.*;
 
-public class UsuarioDAO {
+public class EventoDAO {
     public static void agregarUsuario(DSLContext query, Usuario usuario){
         Table tablaUsuario= table(name("Usuario"));
         Field[] columnas = tablaUsuario.fields("rut","nombre","edad");

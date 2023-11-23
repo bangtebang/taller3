@@ -13,6 +13,5 @@
         <input type="submit" value="Registrar evento" class="boton">
     </div>
 </form>
-</form>
 </body>
 </html>

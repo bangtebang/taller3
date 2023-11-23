@@ -15,7 +15,7 @@ import static model.data.DBGenerator.iniciarBD;
 import static model.data.dao.UsuarioDAO.agregarUsuario;
 
 @WebServlet(name = "registroUsuarioServlet", value = "/registroUsuario")
-public class RegistroUsuarioServlet extends HttpServlet {
+public class RegistroArtistaServlet extends HttpServlet {
     public void init() throws ServletException {
         try {
             DBGenerator.iniciarBD("UsuariosBD");

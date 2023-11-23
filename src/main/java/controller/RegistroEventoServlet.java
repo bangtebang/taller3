@@ -6,40 +6,38 @@ import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
-import model.Usuario;
+import model.EventoMusical;
+
 import model.data.DBGenerator;
-import model.data.dao.UsuarioDAO;
+
+import model.data.dao.EventoDAO;
 import org.jooq.DSLContext;
 
 import static model.data.DBGenerator.iniciarBD;
-import static model.data.dao.UsuarioDAO.agregarUsuario;
 
 @WebServlet(name = "registroEventoServlet", value = "/registroEvento")
 public class RegistroEventoServlet extends HttpServlet {
     public void init() throws ServletException {
         try {
-            DBGenerator.iniciarBD("UsuariosBD");
+            DBGenerator.iniciarBD("EventosBD");
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
     }
 
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        RequestDispatcher respuesta = req.getRequestDispatcher("/registroUsuario.jsp");
+        RequestDispatcher respuesta = req.getRequestDispatcher("/registroEvento.jsp");
         respuesta.forward(req, resp);
     }
 
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         RequestDispatcher respuesta = req.getRequestDispatcher("/registroErroneo.jsp");
-        if (req.getParameter("edad").length() != 0 && req.getParameter("nombre").length() != 0 &&
-                req.getParameter("rut").length() != 0) {
+        if (req.getParameter("nombre").length() != 0) {
             String nombre = req.getParameter("nombre");
-            int edad = Integer.parseInt(req.getParameter("edad"));
-            String rut = req.getParameter("rut");
-            Usuario usuario = new Usuario(nombre, edad, rut);
+            EventoMusical evento = new EventoMusical(nombre);
             try {
-                if (agregarUsuario(usuario)) {
-                    req.setAttribute("usuario", usuario);
+                if (agregarEventoMusical(evento)) {
+                    req.setAttribute("evento", evento);
                     respuesta = req.getRequestDispatcher("registroValido.jsp");
                 }
             } catch (ClassNotFoundException e) {
@@ -49,13 +47,13 @@ public class RegistroEventoServlet extends HttpServlet {
         respuesta.forward(req, resp);
     }
 
-    private boolean agregarUsuario(Usuario usuario) throws ClassNotFoundException {
-        DSLContext query = DBGenerator.conectarBD("UsuariosBD");
-        List<Usuario> usuarios = UsuarioDAO.obtenerUsuario(query, "rut", usuario.getRut());
+    private boolean agregarEventoMusical(EventoMusical usuario) throws ClassNotFoundException {
+        DSLContext query = DBGenerator.conectarBD("EventosBD");
+        List<EventoMusical> usuarios = EventoDAO.obtenerEventoMusical(query, "nombre", usuario.getNombre());
         if (usuarios.size() != 0) {
             return false;
         } else {
-            UsuarioDAO.agregarUsuario(query, usuario);
+            EventoDAO.agregarEventoMusical(query, usuario);
             return true;
         }
     }

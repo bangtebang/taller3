@@ -18,7 +18,7 @@ import static model.data.dao.UsuarioDAO.agregarUsuario;
 public class RegistroAsistenteServlet extends HttpServlet {
     public void init() throws ServletException {
         try {
-            DBGenerator.iniciarBD("UsuariosBD");
+            DBGenerator.iniciarBD("EventosBD");
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }

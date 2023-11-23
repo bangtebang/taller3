@@ -1,5 +1,6 @@
 package model.data.dao;
 
+import model.Asistente;
 import model.Usuario;
 import org.jooq.*;
 import org.jooq.impl.DSL;
@@ -10,11 +11,11 @@ import java.util.List;
 import static org.jooq.impl.DSL.*;
 
 public class AsistenteDAO {
-    public static void agregarUsuario(DSLContext query, Usuario usuario){
+    public static void agregarAsistente(DSLContext query, Asistente asistente){
         Table tablaUsuario= table(name("Usuario"));
         Field[] columnas = tablaUsuario.fields("rut","nombre","edad");
         query.insertInto(tablaUsuario, columnas[0], columnas[1],columnas[2])
-                .values(usuario.getRut(),usuario.getNombre(),usuario.getEdad())
+                .values(asistente.getRut(),asistente.getNombre(),asistente.getEdad())
                 .execute();
     }
 

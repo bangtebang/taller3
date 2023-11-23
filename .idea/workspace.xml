@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="taller3:war exploded" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6b9e535-7a15-4360-8c44-80632f48a969" name="Changes" comment="subo codigo cooregido jsp">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-    </list>
+    <list default="true" id="e6b9e535-7a15-4360-8c44-80632f48a969" name="Changes" comment="subo mejora de README.md" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,6 +30,9 @@
     <option name="FILTER_INFO" value="true" />
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
@@ -53,6 +58,7 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -157,7 +163,7 @@
       <workItem from="1700741605543" duration="19000" />
       <workItem from="1700741655141" duration="19000" />
       <workItem from="1700741708821" duration="12000" />
-      <workItem from="1700741823207" duration="3168000" />
+      <workItem from="1700741823207" duration="4415000" />
     </task>
     <task id="LOCAL-00001" summary="subo rama master">
       <option name="closed" value="true" />
@@ -255,7 +261,23 @@
       <option name="project" value="LOCAL" />
       <updated>1700744710979</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="subo codigo README.md">
+      <option name="closed" value="true" />
+      <created>1700745888662</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1700745888662</updated>
+    </task>
+    <task id="LOCAL-00014" summary="subo mejora de README.md">
+      <option name="closed" value="true" />
+      <created>1700746195946</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1700746195946</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -283,6 +305,8 @@
     <MESSAGE value="subo codigo registro de eventos" />
     <MESSAGE value="subo codigo resgristro artista y regristro asistente" />
     <MESSAGE value="subo codigo cooregido jsp" />
-    <option name="LAST_COMMIT_MESSAGE" value="subo codigo cooregido jsp" />
+    <MESSAGE value="subo codigo README.md" />
+    <MESSAGE value="subo mejora de README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="subo mejora de README.md" />
   </component>
 </project>

@@ -26,12 +26,16 @@ Tambien se crearon los archivos jsp para poder mostrar la interfaz grafica de la
         - `style.css`: archivo css para darle estilo a las paginas
 y sus respectivas clases para controlar la informacion
         - `RegistroEventoServlet.java`: controlador de la clase EventoMusical.
+        - (el metodo para crear un evento:AgregarEventoMusical())
         - `RegistroArtistaServlet.java`: controlador de la clase Artista.
+        - (el metodo para crear un artista:AgregarArtista())
         - `RegistroAsistenteServlet.java`: controlador de la clase Asistente.
+        - (el metodo para crear un asistente:AgregarAsistente())
 añadido a esto se creo una base de datos con las siguientes clases para hacer que funcione
         - `EventoDAO.java`: clase que contiene los metodos para la clase EventoMusical.
         - `ArtistaDAO.java`: clase que contiene los metodos para la clase Artista.
         - `AsistenteDAO.java`: clase que contiene los metodos para la clase Asistente.
-          (clases creadoras de la base de datos)
+          (clases creadoras de la base de datos:)
         - `DBConnector.java`: clase que contiene los metodos para la conexion con la base de datos.
         - `DBCreator.java`: clase que contiene los metodos para crear la base de datos.
+los Datos que se gestionaran en la base de datos seran los atributos de cada clase mencionadas al principio en forma de tabla guardadas en la base de datos llamada "EventosBD"

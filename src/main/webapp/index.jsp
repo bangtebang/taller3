@@ -6,18 +6,13 @@
     <title>Menu</title>
 </head>
 <body>
-<h1 class="encabezado"> Menú principal usuarios </h1>
+<h1 class="encabezado"> Menú principal </h1>
 <br>
-<form action="registroUsuario" method="get">
+<form action="registroEvento" method="get">
     <div class="centrado">
-        <input type="submit" value="Registrar usuario" class="boton">
+        <input type="submit" value="Registrar evento" class="boton">
     </div>
 </form>
-
-<form action="mostrarUsuarios" method="get">
-    <div class="centrado">
-        <input type="submit" value="Mostrar usuarios" class="boton">
-    </div>
 </form>
 </body>
 </html>

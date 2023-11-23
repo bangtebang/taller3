@@ -2,22 +2,15 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Registro usuario</title>
+    <title>Registro Incorrecto</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-<h1 class="encabezado">Registro usuario</h1>
+<h1 class="encabezado">Registro Evento incorrecto</h1>
 <h2 class="subtitulo">Datos Incorrectos,favor comprobar nuevamente</h2>
-<form action="registroUsuario" method="post">
+<form action="registroEvento" method="post">
     <div class="centrado">
-    <label>Nombre:</label>
-    <input name="nombre" type="text" class="campoTexto">
-    <label>Edad:</label>
-    <input name="edad" type="number" class="campoTexto">
-    <label>Rut:</label>
-    <input name="rut" type="text" class="campoTexto">
-    <br><br>
-    <input type="submit" value="Enviar" class="boton">
+        <a class="boton" href="index.jsp">Volver</a>
     </div>
 </form>
 </body>

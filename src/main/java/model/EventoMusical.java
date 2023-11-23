@@ -1,33 +1,22 @@
 package model;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+
 public class EventoMusical {
+    private ArrayList<Artista> artistas= new ArrayList<>();
+    private ArrayList<Asistente> asistentes= new ArrayList<>();
     private String nombre;
     private int edad;
     private String rut;
-    public Usuario(String nombre, int edad, String rut) {
+    public EventoMusical(String nombre) {
         this.nombre = nombre;
-        this.edad = edad;
-        this.rut = rut;
     }
     public String getNombre() {
         return this.nombre;
     }
-
-    public void setEdad(int edad) {
-        this.edad = edad;
-    }
     public void setNombre(String nombre) {
         this.nombre = nombre;
-    }
-
-    public int getEdad() {
-        return this.edad;
-    }
-    public String getRut() {
-        return this.rut;
-    }
-    public void setRut(String rut) {
-        this.rut = rut;
     }
 
 }

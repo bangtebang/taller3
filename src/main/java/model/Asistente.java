@@ -4,10 +4,12 @@ public class Asistente {
     private String nombre;
     private int edad;
     private String rut;
-    public Usuario(String nombre, int edad, String rut) {
+    private EventoMusical evento;
+    public Asistente(String nombre, int edad, String rut, EventoMusical evento) {
         this.nombre = nombre;
         this.edad = edad;
         this.rut = rut;
+        this.evento = evento;
     }
     public String getNombre() {
         return this.nombre;

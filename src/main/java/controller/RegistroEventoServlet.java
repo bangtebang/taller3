@@ -14,7 +14,7 @@ import org.jooq.DSLContext;
 import static model.data.DBGenerator.iniciarBD;
 import static model.data.dao.UsuarioDAO.agregarUsuario;
 
-@WebServlet(name = "registroUsuarioServlet", value = "/registroUsuario")
+@WebServlet(name = "registroEventoServlet", value = "/registroEvento")
 public class RegistroEventoServlet extends HttpServlet {
     public void init() throws ServletException {
         try {

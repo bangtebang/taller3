@@ -4,18 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6b9e535-7a15-4360-8c44-80632f48a969" name="Changes" comment="subo correcion de nombres">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="e6b9e535-7a15-4360-8c44-80632f48a969" name="Changes" comment="subo codigo corregido de nombres">
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/RegistroArtistaServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/RegistroArtistaServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/RegistroAsistenteServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/RegistroAsistenteServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/RegistroEventoServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/RegistroEventoServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Artista.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Artista.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Asistente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Asistente.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/EventoMusical.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/EventoMusical.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/data/dao/ArtistaDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/data/dao/ArtistaDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/data/dao/AsistenteDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/data/dao/AsistenteDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/data/dao/EventoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/data/dao/EventoDAO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,22 +30,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/esteb/IdeaProjects/taller3",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/esteb/IdeaProjects/taller3&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Tomcat 10.1.16" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.1.16" ALTERNATIVE_JRE_ENABLED="false">
       <deployment>
@@ -88,6 +81,7 @@
       <workItem from="1700741605543" duration="19000" />
       <workItem from="1700741655141" duration="19000" />
       <workItem from="1700741708821" duration="12000" />
+      <workItem from="1700741823207" duration="430000" />
     </task>
     <task id="LOCAL-00001" summary="subo rama master">
       <option name="closed" value="true" />
@@ -129,7 +123,31 @@
       <option name="project" value="LOCAL" />
       <updated>1700741423623</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="subo rama master">
+      <option name="closed" value="true" />
+      <created>1700741878551</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1700741878551</updated>
+    </task>
+    <task id="LOCAL-00007" summary="subo rama esteban">
+      <option name="closed" value="true" />
+      <created>1700741942132</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1700741942132</updated>
+    </task>
+    <task id="LOCAL-00008" summary="subo codigo corregido de nombres">
+      <option name="closed" value="true" />
+      <created>1700742056374</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1700742056374</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,10 +166,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="subo rama master" />
-    <MESSAGE value="subo rama esteban" />
     <MESSAGE value="subo creacion de clases y jsp en formato mvc" />
     <MESSAGE value="subo correcion de nombres" />
-    <option name="LAST_COMMIT_MESSAGE" value="subo correcion de nombres" />
+    <MESSAGE value="subo rama master" />
+    <MESSAGE value="subo rama esteban" />
+    <MESSAGE value="subo codigo corregido de nombres" />
+    <option name="LAST_COMMIT_MESSAGE" value="subo codigo corregido de nombres" />
   </component>
 </project>

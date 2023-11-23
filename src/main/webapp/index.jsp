@@ -13,5 +13,15 @@
         <input type="submit" value="Registrar evento" class="boton">
     </div>
 </form>
+<form action="registroArtista" method="get">
+    <div class="centrado">
+        <input type="submit" value="Registrar Artista" class="boton">
+    </div>
+</form>
+<form action="registroAsistente" method="get">
+    <div class="centrado">
+        <input type="submit" value="Registrar asistente" class="boton">
+    </div>
+</form>
 </body>
 </html>

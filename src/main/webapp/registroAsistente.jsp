@@ -5,7 +5,7 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body> <h1 class="encabezado">Registro usuario</h1>
-<form action="registroUsuario" method="post">
+<form action="registroAsistente" method="post">
     <div class="centrado">
         <label>Nombre:</label>
         <input name="nombre" type="text" class="campoTexto">
